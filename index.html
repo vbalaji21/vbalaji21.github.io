@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vignesh Balaji — Robotics Engineer</title>
+  <meta name="description" content="Portfolio of Vignesh Balaji, a robotics engineer building autonomous systems, perception, and control." />
+  <meta property="og:title" content="Vignesh Balaji — Robotics Engineer" />
+  <meta property="og:description" content="Projects, papers, demos, and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/assets/favicon.ico" />
+  <style>
+    :root{
+      --bg:#0b0c10;--panel:#0f1117;--text:#e6e6e6;--muted:#a6adbb;--brand:#6ee7ff;--accent:#a78bfa;--ok:#34d399;--warn:#facc15;--danger:#f87171;
+      --card:#11131a;--border:#1f2430;--ring:rgba(110,231,255,0.35);
+      --max:1100px;--radius:18px;--pad:18px;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:linear-gradient(180deg,#0b0c10,#0a0b0f);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{opacity:.9;text-decoration:underline}
+    img{max-width:100%;height:auto}
+    .container{max-width:var(--max);margin-inline:auto;padding:24px;}
+    .nav{position:sticky;top:0;background:rgba(10,11,15,.6);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);z-index:50}
+    .nav-inner{display:flex;align-items:center;gap:16px;max-width:var(--max);margin:auto;padding:10px 24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700}
+    .brand .dot{width:10px;height:10px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#9ffcff,transparent 50%), var(--brand);box-shadow:0 0 0 6px var(--ring)}
+    .nav-links{margin-left:auto;display:flex;gap:18px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid var(--border);border-radius:12px;background:linear-gradient(180deg,#10131a,#0c0f15);color:var(--text)}
+    .btn:hover{box-shadow:0 0 0 4px var(--ring)}
+    .btn.primary{background:linear-gradient(180deg,#13202a,#0b1820);border-color:#1d2a36}
+
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:48px 24px}
+    .card{background:linear-gradient(180deg,#0e1118,#0b0e14);border:1px solid var(--border);border-radius:var(--radius);box-shadow:0 10px 40px rgba(0,0,0,.35)}
+    .card.pad{padding:28px}
+    .kicker{color:var(--muted);letter-spacing:.12em;text-transform:uppercase;font-size:.78rem}
+    h1{font-size:clamp(1.8rem,2.8vw+1rem,3.2rem);line-height:1.15;margin:.3em 0}
+    .lead{font-size:1.08rem;color:#d8dee9}
+    .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .tag{border:1px solid var(--border);border-radius:999px;padding:6px 10px;color:#dbeafe;background:#0e1320}
+    .me{aspect-ratio:1/1;border-radius:22px;overflow:hidden;border:1px solid var(--border)}
+
+    .grid{display:grid;gap:18px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    @media (max-width:920px){.hero{grid-template-columns:1fr}.grid.cols-3{grid-template-columns:1fr}.grid.cols-2{grid-template-columns:1fr}}
+
+    section{scroll-margin-top:90px}
+    .section{padding:24px}
+    .section h2{font-size:1.6rem;margin:0 0 8px}
+    .section p{color:var(--muted)}
+
+    .project{display:flex;flex-direction:column;gap:10px}
+    .project img{border-radius:14px;border:1px solid var(--border)}
+    .project .meta{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.92rem}
+    .pill{padding:4px 10px;border-radius:999px;border:1px solid var(--border);background:#0d1117;color:#cbd5e1}
+
+    .timeline{border-left:2px dashed #263042;margin-left:10px;padding-left:18px}
+    .item{margin:14px 0}
+    .item .when{color:var(--muted);font-size:.9rem}
+
+    footer{padding:32px 24px;color:var(--muted);border-top:1px solid var(--border)}
+    .social{display:flex;gap:12px;flex-wrap:wrap}
+    .social a{border:1px solid var(--border);padding:8px 12px;border-radius:10px}
+
+    .badge{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--border);background:#0c1016;padding:6px 10px;border-radius:10px}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vignesh Balaji",
+    "jobTitle": "Robotics Engineer",
+    "url": "https://yourdomain.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/yourhandle",
+      "https://github.com/vbalaji21",
+      "https://scholar.google.com/citations?user=YOURID"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand"><span class="dot" aria-hidden="true"></span> <span>Vignesh Balaji</span></div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#talks">Talks</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a class="btn primary" href="/assets/Resume.pdf" download>Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card pad">
+        <div class="kicker">Robotics Engineer</div>
+        <h1>Building autonomous systems that see, think, and act.</h1>
+        <p class="lead">I design and ship perception, planning, and controls for mobile robots. My interests: autonomy stacks, state estimation, embedded C++/ROS, and simulation‑to‑real transfer.</p>
+        <div class="tags" aria-label="Key skills">
+          <span class="tag">C++17 / Python</span>
+          <span class="tag">ROS 2</span>
+          <span class="tag">SLAM</span>
+          <span class="tag">Model‑Predictive Control</span>
+          <span class="tag">Vision</span>
+          <span class="tag">Simulation</span>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn" href="#contact">Contact me</a>
+          <a class="btn" href="https://github.com/vbalaji21" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="card pad me" aria-label="Profile photo">
+        <!-- Replace with your <img src="/assets/me.jpg" alt="Vignesh Balaji"/> -->
+        <svg viewBox="0 0 400 400" role="img" aria-label="placeholder image"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6ee7ff"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs><rect width="400" height="400" rx="24" fill="#0f1320"/><circle cx="200" cy="140" r="80" fill="url(#g)" opacity="0.6"/><rect x="80" y="240" width="240" height="120" rx="20" fill="url(#g)" opacity="0.35"/></svg>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Featured Projects</h2>
+      <p>Production‑grade work, research prototypes, and weekend builds.</p>
+      <div class="grid cols-3" role="list">
+        <!-- PROJECT 1 -->
+        <article class="card pad project" role="listitem">
+          <img src="assets/project1.jpg" alt="Project 1 thumbnail" />
+          <div class="meta">
+            <strong>Autonomous Turf Robot</strong>
+            <span class="pill">C++ • ROS 2</span>
+          </div>
+          <p>End‑to‑end autonomy stack for outdoor navigation with sensor fusion, local planners, and safety monitors. Benchmarked in challenging terrain.</p>
+          <p>
+            <a href="#">Case study</a> · <a href="#">GitHub</a> · <a href="#">Demo video</a>
+          </p>
+        </article>
+        <!-- PROJECT 2 -->
+        <article class="card pad project" role="listitem">
+          <img src="assets/project2.jpg" alt="Project 2 thumbnail" />
+          <div class="meta">
+            <strong>Visual‑Inertial SLAM</strong>
+            <span class="pill">Python • Ceres</span>
+          </div>
+          <p>Implemented tightly‑coupled VIO with robust initialization and loop closures; evaluated on EuRoC and KITTI datasets.</p>
+          <p>
+            <a href="#">Paper</a> · <a href="#">Code</a> · <a href="#">Dataset</a>
+          </p>
+        </article>
+        <!-- PROJECT 3 -->
+        <article class="card pad project" role="listitem">
+          <img src="assets/project3.jpg" alt="Project 3 thumbnail" />
+          <div class="meta">
+            <strong>Model‑Predictive Control</strong>
+            <span class="pill">MPC • Sim</span>
+          </div>
+          <p>Receding‑horizon controller for tracked robot; constraints on traction, torque, and curvature with real‑time QP solver.</p>
+          <p>
+            <a href="#">Tech note</a> · <a href="#">Video</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <h2>Publications</h2>
+      <div class="grid cols-2">
+        <article class="card pad">
+          <div class="kicker">2025</div>
+          <strong>Title of your paper</strong>
+          <p class="muted">Conference/Journal • Co‑authors</p>
+          <p>One‑line summary of the contribution and results. <a href="#">PDF</a> • <a href="#">BibTeX</a></p>
+        </article>
+        <article class="card pad">
+          <div class="kicker">2024</div>
+          <strong>Another paper title</strong>
+          <p class="muted">Workshop • Co‑authors</p>
+          <p>One‑line summary. <a href="#">PDF</a> • <a href="#">Code</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="talks" class="section">
+      <h2>Talks & Demos</h2>
+      <div class="timeline">
+        <div class="item">
+          <div class="when">Oct 2025</div>
+          <strong>Autonomy for Outdoor Maintenance</strong> — Guest talk at Meetup/Company. <a href="#">Slides</a>
+        </div>
+        <div class="item">
+          <div class="when">May 2025</div>
+          <strong>From Sim‑to‑Real for Mobile Robots</strong> — University seminar. <a href="#">Video</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="grid cols-2">
+        <article class="card pad">
+          <div class="badge"><span aria-hidden="true">🏢</span> Company • Robotics Engineer</div>
+          <div class="when">2024 — Present</div>
+          <p>Brief impact statement with measurable outcomes. Example: reduced mission failure by 32% via better failure‑mode handling.</p>
+        </article>
+        <article class="card pad">
+          <div class="badge"><span aria-hidden="true">🎓</span> University • MSc, Field</div>
+          <div class="when">2023 — 2025</div>
+          <p>Thesis: <em>Title on LCA and Robotics</em>. Coursework: Controls, Optimization, Perception.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Open to collaborations, consulting, or full‑time roles.</p>
+      <div class="social">
+        <a href="mailto:you@domain.com" aria-label="Email">you@domain.com</a>
+        <a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/vbalaji21" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://x.com/yourhandle" target="_blank" rel="noopener">X/Twitter</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <small>© <span id="y"></span> Vignesh Balaji. All rights reserved.</small>
+      <small>Built with semantic HTML & vanilla CSS. <a href="#top">Back to top ↑</a></small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
